@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Show Data</title>
+</head>
+<body>
+    <div class="main bg-zinc-800 min-h-screen w-full p-10">
+        <!-- Add Tailwind classes for better text styling and readability -->
+        <h1 class="text-4xl text-white mb-5"><%= filename %></h1>
+        
+        <!-- Check if fileData exists and render it -->
+        <% if (fileData) { %>
+            <p class="text-lg text-white whitespace-pre-wrap"><%= fileData %></p> <!-- Display the content with formatting preserved -->
+        <% } else { %>
+            <p class="text-red-500">No content available for this file.</p> <!-- Display a message if fileData is empty -->
+        <% } %>
+    </div>
+</body>
+</html>

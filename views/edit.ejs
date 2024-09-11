@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form Handling</title>
+</head>
+<body>
+ <div class="main w-full min-h-screen bg-zinc-800">
+    <div class="form p-10 text-white ">
+        <form action="/edit" method="post">
+            <input class="w-1/4 bg-zinc-600 my-4 mx-2 outline-none px-3 py-3 rounded-lg" type="text" placeholder="Previous Name" value="<%=filename%>" name="old">
+            <input class="w-1/4 bg-zinc-600 my-4 mx-2 outline-none px-3 py-3 rounded-lg resize-none" placeholder="New Name" name="new">
+            <!-- Changed placeholder to value in submit button -->
+            <input type="submit" class="bg-yellow-500 rounded-md px-5 py-3" value="Create Task">
+        </form>
+    </div>
+ </div>
+</body>
+</html>
